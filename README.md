@@ -6,12 +6,17 @@ This repository provides full functionality for authorization and mail confirmat
 
 To set up JWT authentication and mail confirmation, follow these steps:
 
-1. Run the following command to install JWT authentication:
+1. Run the following command to install the `skofi/laravel-jwt-auth` package:
+    ```sh
+    composer require skofi/laravel-jwt-auth
+    ```
+
+2. Run the following command to install JWT authentication:
     ```sh
     php artisan jwt-auth:install
     ```
 
-2. Publish the vendor for JWT authentication:
+3. Publish the vendor for JWT authentication:
     ```sh
     php artisan vendor:publish --provider="Tymon\JWTAuth\Providers\LaravelServiceProvider"
     ```
